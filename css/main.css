@@ -18,29 +18,29 @@
   margin: 0 auto;
 }
 h1 {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", sans-serif, system-ui;
 }
 h2 {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", sans-serif, system-ui;
   font-size: 1.9em;
   text-transform: lowercase;
 }
 h4 {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", sans-serif, system-ui;
   text-transform: capitalize;
 }
 h3 {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", sans-serif, system-ui;
   text-transform: uppercase;
 }
 a {
   text-decoration: none;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", sans-serif, system-ui;
   font-weight: bold;
   color: #333;
 }
 p {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", sans-serif, system-ui;
   font-size: 16px;
 }
 li {

@@ -19,6 +19,8 @@
 }
 h1 {
   font-family: "Lato", sans-serif;
+  max-width: 500px;
+  
 }
 h2 {
   font-family: "Lato", sans-serif;
