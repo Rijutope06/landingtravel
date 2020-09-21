@@ -1,0 +1,63 @@
+.hero {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 571px;
+    background-color: @color-secundario;
+    border-radius: 30px 36px 100% 30px;
+    margin-bottom: 86px;
+
+    &__reviews {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin: 94px 0 0 82px;
+        width: 392px;
+        height: 359px;
+
+        img {
+            width: 127px;
+            height: 46px;
+            margin: 44px 16px 0 0;
+        }
+    }
+
+    &__reviews h1 {
+        font-size: 4em;
+    }
+
+    hr {
+        .default-hr();
+    }
+
+    &__imagen {
+        grid-column-start: 4;
+        grid-column-end: 6;
+
+        img {
+            width: 335px;
+            height: 505px;
+            margin-top: 4em;
+        }
+    }
+
+    &--boton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 58px;
+        background-color: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0px 3px 0px;
+        border-radius: 17px;
+        border: none;
+        cursor: pointer;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        transition: 1s;
+        justify-self: center;
+        margin-top: -4.5em;
+        &::after{
+            content: "|";
+        }
+    }
+
+}

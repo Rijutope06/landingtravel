@@ -1,0 +1,84 @@
+.feedback {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 80px 0 80px 0;
+    width: 100%;
+    height: 400px;
+
+    &__container {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin: 0 0 0 82px;
+
+        h3 {
+            margin-bottom: 21px;
+            padding-right: 3em;
+        }
+
+        hr {
+            .default-hr();
+        }
+
+        p {
+            padding-right: 4em;
+            line-height: 1.5em;
+        }
+
+
+    }
+
+    &__people {
+        display: flex;
+        margin: 2em 0 2em 0;
+
+
+        img {
+            width: 37px;
+            height: 37px;
+            border-radius: 100px;
+            margin-right: -.5em;
+            cursor: pointer;
+        }
+
+        img:hover {
+            width: 50px;
+            height: 50px;            
+            transform: rotate(30deg);
+            transition: width 1s, height 1s;
+            rotate: 2 4;
+        }
+
+        span::before {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            content: "+";
+            margin: 0 auto;
+            width: 37px;
+            height: 37px;
+            border-radius: 100px;
+            background-color: @color-claro;
+            color: @color-primario;
+            .box-shadow();
+            cursor: pointer;
+        }
+
+        span:hover {
+            display: flex;
+            width: 50px;
+            height: 50px;
+            transition: width 1s, height 1s;
+        }
+    }
+
+
+    &__img {
+        grid-column-start: 4;
+        grid-column-end: 6;
+        background-image: url("../img/Airport.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+}

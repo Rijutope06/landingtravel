@@ -1,0 +1,28 @@
+-var logo = "Travellers"
+-var titulosmenu = ["Reviews", "People", "Partners", "Feedbacks", "Pricing", "Get the App"]
+-var titulosmenufooter = ["Reviews", "People", "Partners", "Feedbacks", "Pricing"]
+-var tituloscontent = ["Don't listen to what they say, Go see", "Join the biggest community of travellers", "know the people you're going to meet", "choose the plan that's right for you"]
+-var tituloscontentsub = ["build up a community", "popular travellers", "pricing table", "standard", "essentials", "premiun"]
+-var precingvalor = ["$29", "$99", "$129"]
+-var enlaces
+
+mixin tablepricing(valor, plan, content)
+    .pricing__table
+        .pricing__container
+            h2.pricing__month #{valor}
+            span /month
+            h3.pricing__plan #{plan}
+            p #{content}
+            hr
+            .pricing__info
+                img(src="../img/", alt="")                        
+                p organizes your travel plans
+                img(src="../img/", alt="")                      
+                p organizes your travel plans 
+                img(src="../img/", alt="")                        
+                p organizes your travel plans
+                a(href="#").pricing--buttom Get Started
+
+mixin peoplecard(img, name, pais)
+    .people__container
+        img(src="../img/profile1.svg", alt="")

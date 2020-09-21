@@ -1,0 +1,21 @@
+.hero__container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  height: 571px;
+  border: 1px solid;
+}
+.hero__reviews {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  margin: 94px 0 0 82px;
+  width: 386px;
+  height: 359px;
+  background-color: rgba(209, 93, 93, 0.104);
+}
+.hero__reviews h1 {
+  font-size: 4em;
+}
+.hero__imagen {
+  grid-column-start: 4;
+  grid-column-end: 6;
+}

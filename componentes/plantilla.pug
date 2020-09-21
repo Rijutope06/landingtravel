@@ -1,0 +1,15 @@
+include configuraciones.pug
+doctype html
+html(lang="es")
+    include head.pug
+    body
+        .container            
+            include header.pug
+            block contenidos
+            include hero.pug
+            //- include people.pug
+            include partners.pug
+            include feedback.pug
+            //- include pricing.pug
+            include getapp.pug        
+            include footer.pug
