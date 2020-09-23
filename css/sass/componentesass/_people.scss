@@ -1,0 +1,69 @@
+.people {
+    width: 100%;
+    height: 600px;
+    background-image: url("../../../img/hero-img.svg");
+    background-repeat: no-repeat;
+    block-size: cover;
+
+    &__header {
+        height: 150px;
+        text-align: center;
+        color: $color-oscuro;
+        padding: 30px;
+    }
+
+    hr {
+        @include default-hr;
+    }
+
+    &__content {
+        width: 100%;
+        height: 450px;
+    }
+
+    &__container:nth-child(odd) {
+        display: inline-block;
+        width: 145px;
+        height: 145px;
+        border-radius: 20px;
+        text-align: center;
+        padding: 24px;
+        position: relative;
+        top: 16em;
+        left: 4em;
+        button: 0;
+        background-color: $color-claro;
+        @include box-shadow;
+        transform: rotateZ(-7deg);
+    }
+
+    &__container:nth-child(2n) {
+        display: inline-block;
+        width: 145px;
+        height: 145px;
+        border-radius: 20px;
+        text-align: center;
+        padding: 24px;
+        position: relative;
+        top: 1em;
+        left: 1em;
+        background-color: #fff;
+        box-shadow: 0px 0px 5px 1px;
+        margin-right: 4em;
+        transform: rotateZ(10deg);
+    }
+
+    &__container:hover {
+        width: 150px;
+        height: 150px;
+        cursor: pointer;
+        transform: rotate(30deg);
+        transition: width 1s, height 1s;
+        rotate: 2 4;
+    }
+
+    img {
+        width: 45px;
+        width: 45px;
+    }
+}

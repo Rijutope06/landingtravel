@@ -1,12 +1,12 @@
 section.people
-    .people__header
+    article.people__header
         h3 #{tituloscontentsub[0]}
         h2 #{tituloscontent[1]}
         hr
-    .people__card
-        //- +peoplecard("../img/union.png", "Junior", "Colombia")
-        .card__img img(src="../img/profile1.svg", alt="foto de perfil")
-        .people__content
-            h4 Smit
-            h4 England
-
+    article.people__content
+        +peoplecard("profile1.svg", "Smith", "England") 
+        +peoplecard("profile2.svg", "Julie", "Poland")       
+        +peoplecard("profile2.svg", "Julie", "Poland")
+        +peoplecard("profile3.svg", "Forza", "Georgia")
+        +peoplecard("profile1.svg", "Jessica", "Egypt")
+        +peoplecard("profile2.svg", "Sajon", "Finland")

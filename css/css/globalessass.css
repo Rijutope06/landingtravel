@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+h1 {
+  font-family: "Lato", system-ui;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Lato", system-ui;
+  font-size: 1.9em;
+  text-transform: lowercase;
+  margin: 0.5em 0;
+}
+
+h4 {
+  font-family: "Lato", system-ui;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+h3 {
+  font-family: "Lato", system-ui;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Lato", system-ui;
+  font-weight: bold;
+  color: #333;
+}
+
+p {
+  font-family: Sfuente1, system-ui;
+  font-size: 16px;
+}
+
+li {
+  list-style: none;
+}

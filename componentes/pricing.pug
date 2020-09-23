@@ -1,7 +1,19 @@
 section.pricing
-    h1 SECTION PRICING
     h3 #{tituloscontentsub[2]}
     h2 #{tituloscontent[3]}
-    +tablepricing(precingvalor[0], tituloscontentsub[3], "All the basics for businesses that are just getting started.")
-    +tablepricing(precingvalor[1], tituloscontentsub[4], "All the basics for businesses that are just getting started.")
-    +tablepricing(precingvalor[2], tituloscontentsub[5], "All the basics for businesses that are just getting started.")
+    hr.line--naranja
+    article.pricing__container
+        .pricing__checked
+            span Bill Monthly
+            input#checkbox.pricing__checkbox(type="checkbox" checked aria-label="deslizar para ver más información")
+            label.pricing__switch(for="checkbox")
+            span Bill Annually
+        #checked1.pricing__content--table
+            +tablepricing(precingvalor[0], tituloscontentsub[3], "All the basics for businesses that are just getting started.")
+            +tablepricing(precingvalor[1], tituloscontentsub[4], "All the basics for businesses that are just getting started.")
+            +tablepricing(precingvalor[2], tituloscontentsub[5], "All the basics for businesses that are just getting started.")
+
+        #checked2.pricing__content--table.display-none
+            +tablepricing(precingvalor[3], tituloscontentsub[3], "All the basics for businesses that are just getting started.")
+            +tablepricing(precingvalor[4], tituloscontentsub[4], "All the basics for businesses that are just getting started.")
+            +tablepricing(precingvalor[5], tituloscontentsub[5], "All the basics for businesses that are just getting started.")
