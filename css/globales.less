@@ -5,6 +5,15 @@
 @color-variacion: #F2C065;
 @fuente1: "Lato", sans-serif;
 @fuente2: 'Oswald', sans-serif;
+@breakpoint-768: 768px;
+
+.hover {
+    color: @color-primario;
+}
+
+.hovervariacion{
+    color: @color-secundario;
+}
 
 .default-hr {
     width: 7%;
@@ -27,6 +36,9 @@
 .container {
     width: 90%;
     margin: 0 auto;
+    @media (max-width: 425px) {
+        width: 100%;    
+    }
 }
 
 h1 {

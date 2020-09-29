@@ -14,7 +14,7 @@
     &__container {
         background-color: $color-secundario;
         padding: 40px;
-        border-radius: 20px 20px 0 0;
+        border-radius: 20px 20px 0 0;      
     }
 
     &__checkbox {
@@ -22,7 +22,7 @@
     }
 
     &__checkbox:checked~.pricing__switch::before {
-        border: 1px solid red;
+        border: 1px solid $color-claro;
         transform: translateX(22px);
     }
 
@@ -47,8 +47,7 @@
         border-radius: 20px;
         background-color: $color-primario;
         cursor: pointer;
-        user-select: none;
-        // transform: translateX(22px);
+        user-select: none;        
         transition: .3s;
         will-change: transform;
     }
@@ -59,34 +58,6 @@
         align-items: center;
     }
 
-    // &__checked input[type="checkbox"] {
-    //     position: relative;
-    //     width: 49px;
-    //     height: 25px;
-    //     margin: 0 .5em 0;
-    //     appearance: none;
-    //     background-color: $color-claro;
-    //     outline: none;
-    //     border-radius: 20px;
-    //     @include box-shadow;
-    // }
-
-    // input[type="checkbox"]::before {
-    //     content: '';
-    //     position: absolute;
-    //     top: 10%;
-    //     left: 3%;
-    //     width: 20px;
-    //     height: 20px;
-    //     border-radius: 50%;
-    //     background-color: $color-primario;
-    //     transform: scale(1.1);
-    //     transition: .5s;
-    // }
-
-    // input:checked[type="checkbox"]::before {
-    //     left: 50%;
-    // }
 
     &__content--table {
         display: flex;
@@ -104,7 +75,22 @@
         padding: 30px;
         background-color: $color-claro;
         @include box-shadow;
+        @media (max-width: 425px) {
+            margin-top: 1em;            
+        } 
     }
+
+
+
+    &__table:nth-child(3n) {
+        @media (max-width: 768px) {
+            margin-top: 1em;            
+        } 
+        @media (max-width: 425px) {
+            margin-top: 1em;            
+        }         
+    }
+
 
     &__month,
     span {

@@ -5,7 +5,7 @@
 }
 
 .container {
-  width: 90%;
+  width: 1024px;
   margin: 0 auto;
 }
 
@@ -59,7 +59,7 @@ li {
   height: 600px;
   background-image: url("../../../img/hero-img.svg");
   background-repeat: no-repeat;
-  block-size: cover;
+  background-size: cover;
 }
 .people__header {
   height: 150px;
@@ -77,6 +77,7 @@ li {
 .people__content {
   width: 100%;
   height: 450px;
+  text-align: center;
 }
 .people__container:nth-child(odd) {
   display: inline-block;
@@ -88,10 +89,22 @@ li {
   position: relative;
   top: 16em;
   left: 4em;
-  button: 0;
+  bottom: 0;
   background-color: #fff;
   box-shadow: 0px 0px 2px -1px;
   transform: rotateZ(-7deg);
+}
+@media (max-width: 1024px) {
+  .people__container:nth-child(odd) {
+    display: none;
+  }
+}
+@media (max-width: 768PX) {
+  .people__container:nth-child(odd) {
+    top: 2em;
+    left: 4em;
+    display: none;
+  }
 }
 .people__container:nth-child(2n) {
   display: inline-block;
@@ -105,8 +118,33 @@ li {
   left: 1em;
   background-color: #fff;
   box-shadow: 0px 0px 5px 1px;
-  margin-right: 4em;
+  margin-right: 1em;
   transform: rotateZ(10deg);
+}
+@media (max-width: 1024px) {
+  .people__container:nth-child(2n) {
+    position: relative;
+    top: 6em;
+    left: 4em;
+    bottom: 0;
+    margin-right: 9em;
+  }
+}
+@media (max-width: 768px) {
+  .people__container:nth-child(2n) {
+    position: relative;
+    left: 4em;
+    bottom: 0;
+    top: 7em;
+    margin-right: 5em;
+  }
+}
+@media (max-width: 425px) {
+  .people__container:nth-child(2n) {
+    top: 1em;
+    left: 0;
+    margin: 0.5em 1.5em 2.5em 0.5em;
+  }
 }
 .people__container:hover {
   width: 150px;
@@ -145,7 +183,7 @@ li {
   display: none;
 }
 .pricing__checkbox:checked ~ .pricing__switch::before {
-  border: 1px solid red;
+  border: 1px solid #fff;
   transform: translateX(22px);
 }
 .pricing__switch {
@@ -190,6 +228,21 @@ li {
   padding: 30px;
   background-color: #fff;
   box-shadow: 0px 0px 2px -1px;
+}
+@media (max-width: 425px) {
+  .pricing__table {
+    margin-top: 1em;
+  }
+}
+@media (max-width: 768px) {
+  .pricing__table:nth-child(3n) {
+    margin-top: 1em;
+  }
+}
+@media (max-width: 425px) {
+  .pricing__table:nth-child(3n) {
+    margin-top: 1em;
+  }
 }
 .pricing__month,
 .pricing span {
